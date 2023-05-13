@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link href="./Assets/Tablas.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="titulo">Práctica de Tablas</h1>
+
+    <br>
+    <br>
+    <p class="titulo" id="nombres"> Tabla de nombres</caption> <!--representa un título descriptivo en una tabla.-->
+    <br>
+    <br>
+    <div class="container">
+    <table> <!--crea el elemento de tabla.-->
+        <tr> <!--representa una fila.-->
+            <th>Nombre</th> <!--representa las celdas de encabezado.-->
+            <th>Apellido</th> 
+        </tr> 
+        <tr> 
+             <td>Leslie</td> <!--representa las celdas de datos.-->
+             <td>Flores</td> 
+        </tr> 
+        <tr> 
+             <td>Nayeli</td>
+             <td>Baeza</td> 
+        </tr> 
+    </table>
+    </div>
+
+    <p class="titulo">Tabla simple con encabezado</p>
+
+
+    <div class="container">
+    <table>
+            
+            <thead>
+                <tr>
+                    <th colspan="2">Encabezado de tablas</th><!--permite expandir las celdas de datos o de encabezados al número de columnas que deseemos que ocupe-->
+                </tr>
+            </thead>
+            <tbody><!--esta etiqueta agrupa los elementos de contenido en la tabla.-->
+                <tr>
+                    <td>El cuerpo de la tabla</td>
+                    <td>con 2 columnas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <br>
+        
+        <br>
+       
+        
+        <p class="titulo">Tabla con thead, tfoot, y tbody</p>
+        <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>Artículo</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td >Manzana (kg)</td>
+              <td>$15 </td>
+            </tr>
+          </tbody>
+          <tfoot><!--esta etiqueta agrupa los elementos de pie en la tabla.-->
+            <tr>
+              <td>Footer content 1</td>
+              <td>Footer content 2</td>
+            </tr>
+          </tfoot>
+        </table>
+    </div>
+        <p class="titulo">Tabla con colgroup</p>
+        <br>
+        <div class="container">X
+<table>
+  <colgroup span="4"></colgroup> <!--Para aplicar una propiedad a más de una columna no es necesario repetir la propiedad en cada elemento <col>. Lo más sencillo es aplicarle el atributo span al primer elemento <col>. Este atributo funciona igual que rowspan y colspan, es decir, nos permite expandir la influencia de <col> al número de columnas que queramos.-->
+  <tr>
+    <th>Países</th>
+    <th>Capitales</th>
+    <th>Población</th>
+    <th>Languaje</th>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>Washington, D.C.</td>
+    <td>309 million</td>
+    <td>English</td>
+  </tr>
+  <tr>
+    <td>Sweden</td>
+    <td>Stockholm</td>
+    <td>9 million</td>
+    <td>Swedish</td>
+  </tr>
+</table>
+</div>
+
+<p class="titulo">Tabla con colgroup y col</p>
+<br>
+<div class="container">X
+<table>
+  <colgroup><!--El elemento <col> se especifica dentro de un bloque <colgroup>, justo debajo de la apertura <table>.-->
+    <col style="background-color: rgb(54, 210, 221)" /> <!--Este elemento nos permite especificar propiedades de estilo para toda una columna. Sin este elemento tendríamos que especificar el estilo en cada celda <th> o <td> de la columna que queramos estilizar. -->
+    <col span="2" />
+  </colgroup>
+  <tr>
+    <th>Lima</th>
+    <th>Limon</th>
+    <th>Naranja</th>
+  </tr>
+  <tr>
+    <td>Green</td>
+    <td>Yellow</td>
+    <td>Orange</td>
+  </tr>
+</table>
+</div>
+
+<p class="titulo">Cuadro sencillo con leyenda(caption)</p>
+<div class="container">
+<table>
+  <caption>
+    Subtítulo impresionante
+  </caption>
+  <tr>
+    <td>Dato Impresionante</td>
+  </tr>
+</table>
+</div>
+<br>
+<br>
+
+<div align="center" style="border: 03px ridge rgb(86, 84, 219);">
+    <!--Agregar una identificación con un nombre de anclaje-->
+    <a href="#nombres"> REGRESAR A NOMBRES</a>
+    </div><br>
+    
+    <div align="center" style="border: 03px ridge rgb(86, 84, 219);">
+    <!--Anclaje en una imagen-->
+    <img id="fuji" src="./Assets/Fuji.jpg" alt="Montaña Fuji" title="Fuji" width="400" height="300" />
+    </div>
+    
+   <br>
+   <div align="center" style="border: 03px ridge rgb(86, 84, 219);">
+    <a href="./Receta.html" target="_blank">Pica para pay</a>
+
+
+</body>
+</html>

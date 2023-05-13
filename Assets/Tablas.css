@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(78, 78, 221);
+}
+
+.titulo{
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+
+table,
+td {
+    border: 2px solid #000000;
+}
+
+thead,
+tfoot {
+    background-color: #1c96b4;
+    color: #fff;
+}
+
+table tr td{
+    border: 2px dotted;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
